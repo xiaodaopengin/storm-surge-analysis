@@ -12,4 +12,13 @@ function cfg = plot_style_config()
 
     % 色パレットもここに集約可能
     cfg.colors_wind = [ ... ];  % 15色配列
+
+    % ---- 散布図テンプレート共通スタイル（plot_scatter_template.m で使用） ----
+    % HPB vs HCE 散布図のスタイルに統一（Box on / 1:1線0.5 / GridAlpha 0.3）
+    cfg.SCATTER_BOX          = 'on';
+    cfg.SCATTER_AXIS_LW      = 0.8;   % 軸枠線の太さ
+    cfg.SCATTER_1TO1_LW      = 0.5;   % 1:1基準線の太さ
+    cfg.SCATTER_GRID_ALPHA   = 0.3;   % グリッドの濃さ
+    cfg.SCATTER_MARKER_ALPHA = 0.45;  % マーカー透明度
+    cfg.SCATTER_MARKER_SIZE  = 12;    % マーカーサイズ
 end
